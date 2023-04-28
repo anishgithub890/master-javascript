@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body>
+    <!-- <h1>Javascript Tutorial</h1> -->
+    <h1>Tip Calculator</h1>
+    <div>
+      <div>
+        <h3>Bill Total</h3>
+        <input
+          placeholder="$00.00"
+          onkeyup="calculateBill()"
+          id="billTotalInput"
+          class=""
+        />
+      </div>
+      <div>
+        <h3>Tip</h3>
+        <input
+          placeholder="$0.0"
+          onkeyup="calculateBill()"
+          id="tipInput"
+          class=""
+        />
+      </div>
+      <div>
+        <h3>People</h3>
+        <div>
+          <span onclick="increasePeople()">+</span>
+          <span id="numberOfPeople">1</span>
+          <span onclick="decreasePeople()">-</span>
+        </div>
+      </div>
+      <div>
+        <h3>Person Total</h3>
+        <span id="perPersonTotal">$0.00</span>
+      </div>
+    </div>
+    <script src="08_tip_calculate.js"></script>
+  </body>
+</html>
